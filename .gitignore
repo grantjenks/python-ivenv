@@ -1,0 +1,21 @@
+# Generated files
+*.py[co]
+*.c
+*.so
+
+# Virtual environment directories
+/env*/
+
+# Test files and directories
+.coverage
+.pytest_cache/
+/.tox/
+
+# Setup directories
+/build/
+/dist/
+/ivenv.egg-info/
+/docs/_build/
+
+# macOS metadata
+.DS_Store
