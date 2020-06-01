@@ -6,14 +6,20 @@ Interactive Virtual Environments
 
 import os
 import pathlib
+import platform
 import site
 import sys
 
 from typing import List, NamedTuple
 
-BIN_DIR = 'bin'
-LIB_DIR = 'lib'
-SITE_PACKAGES_GLOB = '*/site-packages'
+if platform.system() == 'Windows':
+    BIN_DIR = 'Scripts'
+    LIB_DIR = 'Lib'
+    SITE_PACKAGES_GLOB = 'site-packages'
+else:
+    BIN_DIR = 'bin'
+    LIB_DIR = 'lib'
+    SITE_PACKAGES_GLOB = '*/site-packages'
 
 
 class _State(NamedTuple):
