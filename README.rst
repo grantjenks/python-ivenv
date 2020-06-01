@@ -72,14 +72,14 @@ environment within the Python shell.
 It's also possible to use `ivenv`_ from IPython or Jupyter notebooks. To begin,
 load the `ivenv` extension:
 
-.. code-block:: python
+.. code-block:: shell
 
    %load_ext ivenv
 
 Once the extension is loaded, the "magic" commands: `%activate` and
 `%deactivate` may be used just as their corresponding functions.
 
-.. code-block:: python
+.. code-block:: shell
 
    %activate path/to/venv/directory
    %deactivate
@@ -114,3 +114,5 @@ Unless required by applicable law or agreed to in writing, software distributed
 under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
 CONDITIONS OF ANY KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations under the License.
+
+.. _`ivenv`: http://www.grantjenks.com/docs/ivenv/
