@@ -112,8 +112,8 @@ class IVenv:
     def deactivate(self):
         """Deactivate virtual environment.
 
-        If no virtual environment is active, settings are restored to their
-        startup state.
+        If no virtual environment is active, settings are restored to the
+        original startup state.
 
         """
         if len(self._stack) > 1:
